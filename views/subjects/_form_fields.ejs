@@ -1,0 +1,25 @@
+<div>
+    <label for="subName">Subject Name</label> 
+    <input type="text" name="subName" id="subName" required>
+</div>
+
+ <div>
+    <label for="subSched">Subject Schedule</label>
+    <input type="datetime-local" name="subSched" id="subSched" required>
+</div>
+
+<div>
+    <label for="subTeacher">Subject Teacher</label>
+    <select name="subTeacher" required>
+        <option selected disabled >Select Teacher</option>
+        <% getTeachers.map(key => { %>
+            <option label="<%= key.firstName %>" value="<%= key.id %>">
+        <% }); %> 
+    </select>
+</div>
+
+<div>
+    <label for="subImg">Subject Cover Image</label>
+    <input type="file" name="subImg" id="subImg" required>
+    
+</div>

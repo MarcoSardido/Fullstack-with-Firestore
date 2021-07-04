@@ -1,0 +1,8 @@
+<h2>Recently Added</h2>
+<div>
+    <% displaySub.forEach(key => { %>
+        <img height="150" width="100" src="<%=key.imageName%>">
+        <h3><%= `Subject Name: ${key.subjectName}`%></h3>
+        <h5><%= `Subject Teacher: ${key.subjectTeacher}`%></h5>
+    <% }); %>
+</div>
