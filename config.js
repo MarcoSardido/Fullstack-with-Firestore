@@ -10,7 +10,8 @@ const{
     PROJECT_ID,
     STORAGE_BUCKET,
     MESSAGING_SENDER_ID,
-    APP_ID
+    APP_ID,
+    SERVICE_ACCOUNT_KEY
 } = process.env;
 
 module.exports = {
@@ -22,5 +23,8 @@ module.exports = {
         storageBucket: STORAGE_BUCKET,
         messagingSenderId: MESSAGING_SENDER_ID,
         appId: APP_ID
-    }
+    },
+    SERVICE_ACCOUNT_KEY,
+    DATABASE_URL,
+    STORAGE_BUCKET
 }

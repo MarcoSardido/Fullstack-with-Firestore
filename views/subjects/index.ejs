@@ -1,7 +1,7 @@
 <h2>List of Subjects</h2>
 <div>
     <% getSubject.forEach(key => { %>
-        <img height="150" width="100" src="<%=key.imageName%>">
+        <img height="150" width="100" src="data:<%=key.imgType%>;base64,<%=key.subImage%>">
         <h3><%= `Subject Name: ${key.subjectName}`%></h3>
         <h5><%= `Subject Teacher: ${key.subjectTeacher}`%></h5>
     <% }); %>

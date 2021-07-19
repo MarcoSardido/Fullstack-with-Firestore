@@ -21,7 +21,8 @@ router.get('/', async (req, res) => {
                     doc.data().subjectName,
                     doc.data().subjectSchedule,
                     doc.data().subjectTeacher,
-                    doc.data().subImageName
+                    doc.data().subCoverImg,
+                    doc.data().imgType
                 );
                 displaySubjects.push(subjects);
             });
